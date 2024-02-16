@@ -13,4 +13,4 @@ jobs:
       uses: actions/checkout@v2
     - name: Update bot
       run: |
-        python3 -c "import os; from main.exe import update_from_git; update_from_git('https://github.com/acejas67/discordbot.git', 'local_folder')"
+        python3 -c "import os; from update import update_from_git; update_from_git('https://github.com/acejas67/discordbot.git', 'local_folder')"
