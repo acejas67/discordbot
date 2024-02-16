@@ -1,0 +1,16 @@
+name: Update Bot
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update_bot:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Update bot
+      run: |
+        python3 -c "import os; from your_script import update_from_git; update_from_git('https://github.com/username/repository.git', 'local_folder')"
